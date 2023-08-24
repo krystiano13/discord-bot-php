@@ -1,0 +1,12 @@
+{
+    "name": "krystian/disco-przytuly",
+    "authors": [
+        {
+            "name": "krystiano13",
+            "email": "crystianotv@gmail.com"
+        }
+    ],
+    "require": {
+        "team-reflex/discord-php": "^7.3"
+    }
+}
