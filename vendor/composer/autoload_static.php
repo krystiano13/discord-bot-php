@@ -17,6 +17,7 @@ class ComposerStaticInit39162d2bb15401fa13083744efeaa028
         '49d7e2e91a66e18467cc8d8b8b02459b' => __DIR__ . '/..' . '/mollie/polyfill-libsodium/bootstrap.php',
         '3be16222a6efa6dd226a219eaaff823b' => __DIR__ . '/..' . '/ratchet/pawl/src/functions_include.php',
         '83835a8f9e1906eeec7f4923b03042b8' => __DIR__ . '/..' . '/react/partial/src/functions.php',
+        'ba448153faf7ec4e95af3e4f40fcd7bc' => __DIR__ . '/..' . '/langleyfoxall/math_eval/src/math_eval.php',
         '864b292aadc96fda0e2642b894a38d16' => __DIR__ . '/..' . '/team-reflex/discord-php/src/Discord/functions.php',
     );
 
@@ -54,6 +55,11 @@ class ComposerStaticInit39162d2bb15401fa13083744efeaa028
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MathParser\\' => 11,
+        ),
+        'L' => 
+        array (
+            'LangleyFoxall\\MathEval\\' => 23,
         ),
         'G' => 
         array (
@@ -157,8 +163,8 @@ class ComposerStaticInit39162d2bb15401fa13083744efeaa028
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Clock\\' => 
         array (
@@ -167,6 +173,14 @@ class ComposerStaticInit39162d2bb15401fa13083744efeaa028
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'MathParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mossadal/math-parser/src/MathParser',
+        ),
+        'LangleyFoxall\\MathEval\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/langleyfoxall/math_eval/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

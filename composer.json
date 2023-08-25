@@ -7,6 +7,7 @@
         }
     ],
     "require": {
-        "team-reflex/discord-php": "^7.3"
+        "team-reflex/discord-php": "^7.3",
+        "langleyfoxall/math_eval": "^2.0"
     }
 }
