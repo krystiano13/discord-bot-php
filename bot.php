@@ -24,14 +24,34 @@ $discord -> on("ready", function(Discord $discord) {
             $message -> reply("Siema !");
         }
 
-        else if(
-            $message -> content[0] === "!" &&
-            $message -> content[1] === "m" &&
-            $message -> content[2] === " "
-        ){
+        if(strpos($message -> content, "!m") === 0){
             $content = substr($message -> content, 3);
-            $result = ($content);
-            $message -> reply($result);
+
+            $flag = true;
+
+            foreach(str_split($content) as $letter) {
+                if(
+                    !is_numeric($letter) &&
+                    $letter !== "*" &&
+                    $letter !== "+" &&
+                    $letter !== "/" &&
+                    $letter !== "-" &&
+                    $letter !== " "
+                ) {
+                   $flag = false;
+                }
+            }
+
+            if($flag === true) {  
+                $result = eval("return ".$content.";");
+                $message -> reply($result);
+            }
+            if($flag === false) {
+                $message -> reply("Podaj prawidłowe działanie!");
+            }
+        }
+        else {
+            echo "ni dziala :(";
         }
     });
 });
