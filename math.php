@@ -10,6 +10,7 @@ require_once './vendor/autoload.php';
 $discord -> on(Event::MESSAGE_CREATE, function(Message $message, $discord) {
     if(strpos($message -> content, "!m") === 0){
         $content = substr($message -> content, 3);
+        $content = str_replace(":", "/", $content);
 
         $flag = true;
 
